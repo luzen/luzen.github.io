@@ -52,19 +52,18 @@ html, body {
 .contact-info {
     color: white;
     padding-right: 20px;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    padding: 5px 10px;
+    font-size: 1.2rem;    
     display: flex;
     align-items: center;
 }
 
-    .contact-info i {
-        margin-right: 10px;
-    }
-
     .contact-info a {
         color: white;
+        padding: 10px;
+    }
+
+    .contact-info span {
+        
     }
 
 .container-flex {
@@ -91,9 +90,13 @@ h1 {
     font-size: 3.5rem; /* Default size */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
     h1 {
         font-size: 2rem; /* Adjusted size for tablets and small screens */
+    }
+
+    .contact-info span {
+        display: none;
     }
 }
 
@@ -103,24 +106,3 @@ h1 {
     }
 }
 
-/* Responsive adjustments for contact info */
-@media (max-width: 576px) {
-    .contact-info span {
-        display: none;
-    }
-
-    .contact-info i {
-        display: inline-block;
-        font-size: 1.5rem;
-    }
-}
-
-.chinese-link {
-    color: white;
-    margin-left: 15px;
-}
-
-/* Ensure the Chinese site link is always visible */
-.navbar .chinese-link {
-    display: inline-block;
-}
