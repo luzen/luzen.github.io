@@ -3,12 +3,13 @@ html, body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    background: url('../images/index-background2.jpg') no-repeat center center fixed;
+    background: url('../images/index-background3.jpg') no-repeat center center fixed;
     background-size: cover;
     background-color: #000; /* Fallback background color */
 }
 
 .navbar {
+    border-top: 5px solid #dc3545; /* Red border at the top */
     background-color: black;
     color: white;
 }
@@ -18,11 +19,18 @@ html, body {
     }
 
 .jumbotron {
-    background: rgba(128, 128, 128, 0.7); /* Grey with transparency */
-    color: white;
+    background: rgba(255, 255, 255, 0.7); /* Grey with transparency */
     padding: 2rem;
-    border-radius: 10px;
+    border-radius: 0;
 }
+    .jumbotron p {
+        color: black;
+    }
+
+    .jumbotron h1 {
+        color: white;
+        text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black;
+    }
 
     .jumbotron .btn-primary {
         background-color: #dc3545;
@@ -76,3 +84,43 @@ html, body {
         color: white;
         padding: 15px;
     }
+
+
+/* Responsive adjustments for heading */
+h1 {
+    font-size: 3.5rem; /* Default size */
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Adjusted size for tablets and small screens */
+    }
+}
+
+@media (max-width: 430px) {
+    h1 {
+        font-size: 1.5rem; /* Adjusted size for mobile devices */
+    }
+}
+
+/* Responsive adjustments for contact info */
+@media (max-width: 576px) {
+    .contact-info span {
+        display: none;
+    }
+
+    .contact-info i {
+        display: inline-block;
+        font-size: 1.5rem;
+    }
+}
+
+.chinese-link {
+    color: white;
+    margin-left: 15px;
+}
+
+/* Ensure the Chinese site link is always visible */
+.navbar .chinese-link {
+    display: inline-block;
+}
