@@ -84,6 +84,9 @@ html, body {
         padding: 15px;
     }
 
+.broker-logo {
+    height: 60px;
+}
 
 /* Responsive adjustments for heading */
 h1 {
